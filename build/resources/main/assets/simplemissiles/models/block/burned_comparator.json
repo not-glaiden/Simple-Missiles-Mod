@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/burnedcomparator",
+  "textures": {
+    "all": "simplemissiles:block/burnedrepeater",
+    "particle": "simplemissiles:block/burnedrepeater",
+    "1": "simplemissiles:block/burnedcomparator"
+  },
+  "render_type": "solid"
+}

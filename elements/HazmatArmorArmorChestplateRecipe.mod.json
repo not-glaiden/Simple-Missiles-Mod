@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HazmatArmorArmor.body"
+    },
+    "name": "hazmat_armor_armor_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

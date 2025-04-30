@@ -1,0 +1,4875 @@
+{
+  "mod_elements": [
+    {
+      "name": "Launchpad",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launchpad",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/launchpad.json",
+          "src/main/resources/assets/simplemissiles/blockstates/launchpad.json",
+          "src/main/java/net/mcreator/simplemissiles/block/LaunchpadBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/launchpad.json",
+          "src/main/java/net/mcreator/simplemissiles/block/entity/LaunchpadBlockEntity.java",
+          "src/main/resources/assets/simplemissiles/models/block/launchpad.json"
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "SimpleNukes",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_nukes",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TntMissle",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/TntMissleBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/tnt_missle.json",
+          "src/main/resources/assets/simplemissiles/blockstates/tnt_missle.json",
+          "src/main/resources/assets/simplemissiles/models/block/tnt_missle.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/tnt_missle.json"
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleFalling",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_falling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/tnt_missle_falling.json",
+          "src/main/resources/assets/simplemissiles/models/item/tnt_missle_falling.json",
+          "src/main/java/net/mcreator/simplemissiles/block/TntMissleFallingBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/tnt_missle_falling.json",
+          "src/main/resources/assets/simplemissiles/models/block/tnt_missle_falling.json"
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleFallingBlockAdded",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_falling_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TntMissleFallingBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleEntity",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/TntMissleEntityEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/TntMissleEntityRenderer.java",
+          "src/main/resources/assets/simplemissiles/models/item/tnt_missle_entity_spawn_egg.json"
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleEntityPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_entity_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TntMissleEntityPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_entity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TntMissleEntityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleEntityOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_entity_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TntMissleEntityOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "TntMissleEntityEntityDies",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_entity_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TntMissleEntityEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "LaunchPadGui",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch_pad_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/network/LaunchPadGuiButtonMessage.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/LaunchPadGuiScreen.java",
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/LaunchPadGuiMenu.java"
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "SetCoordsButton",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_coords_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/SetCoordsButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "LAUNCH",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LAUNCHProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "CurrentStrikeLocation",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_strike_location",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/CurrentStrikeLocationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "CoordinatesFastChanger",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coordinates_fast_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/inventory/CoordinatesFastChangerInventoryCapability.java",
+          "src/main/resources/assets/simplemissiles/models/item/coordinates_fast_changer.json",
+          "src/main/java/net/mcreator/simplemissiles/item/CoordinatesFastChangerItem.java"
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "NapalmMissle",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_missle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/block/napalm_missle.json",
+          "src/main/java/net/mcreator/simplemissiles/block/NapalmMissleBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/napalm_missle.json",
+          "src/main/resources/assets/simplemissiles/models/item/napalm_missle.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/napalm_missle.json"
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "NapalmEntity",
+      "type": "livingentity",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/NapalmEntityEntity.java",
+          "src/main/resources/assets/simplemissiles/models/item/napalm_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/NapalmEntityRenderer.java"
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "NapalmEntityDies",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/NapalmEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "NapalmDropped",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_dropped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/NapalmDroppedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "NapalmMissleEntityOntick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_missle_entity_ontick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/NapalmMissleEntityOntickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "NapalmMissleDroppingOnSpawn",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_missle_dropping_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/NapalmMissleDroppingOnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "FallingNapalm",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falling_napalm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/falling_napalm.json",
+          "src/main/resources/assets/simplemissiles/models/block/falling_napalm.json",
+          "src/main/java/net/mcreator/simplemissiles/block/FallingNapalmBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/falling_napalm.json",
+          "src/main/resources/assets/simplemissiles/models/item/falling_napalm.json"
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "FallingNapalmPlaced",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falling_napalm_placed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/FallingNapalmPlacedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "TntMissleRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_missle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/tnt_missle_recipe.json"
+        ]
+      },
+      "path": "~/TntMissile"
+    },
+    {
+      "name": "NapalmRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/napalm_recipe.json"
+        ]
+      },
+      "path": "~/NapalmMissile"
+    },
+    {
+      "name": "LaunchPadRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch_pad_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/launch_pad_recipe.json"
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "Cluster",
+      "type": "projectile",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/ClusterEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/ClusterRenderer.java"
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ClusterProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombEntity",
+      "type": "livingentity",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/ClusterBombEntityEntity.java",
+          "src/main/resources/assets/simplemissiles/models/item/cluster_bomb_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/ClusterBombEntityRenderer.java"
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombEntityEntityDies",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_entity_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ClusterBombEntityEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombEntityOnSpawn",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_entity_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ClusterBombEntityOnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombEntityOnTick",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_entity_on_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ClusterBombEntityOnTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBomb",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/cluster_bomb.json",
+          "src/main/resources/assets/simplemissiles/models/block/cluster_bomb.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/cluster_bomb.json",
+          "src/main/resources/assets/simplemissiles/models/item/cluster_bomb.json",
+          "src/main/java/net/mcreator/simplemissiles/block/ClusterBombBlock.java"
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombFallen",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_fallen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ClusterBombFallenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "ClusterBombFalling",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bomb_falling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/cluster_bomb_falling.json",
+          "src/main/resources/assets/simplemissiles/models/block/cluster_bomb_falling.json",
+          "src/main/java/net/mcreator/simplemissiles/block/ClusterBombFallingBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/cluster_bomb_falling.json",
+          "src/main/resources/assets/simplemissiles/models/item/cluster_bomb_falling.json"
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "CLUSTERBOMBRECIPE",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clusterbombrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/clusterbombrecipe.json"
+        ]
+      },
+      "path": "~/ClusterMissile"
+    },
+    {
+      "name": "Trapdoorclosed",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapdoorclosed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/TrapdoorclosedBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/trapdoorclosed.json",
+          "src/main/resources/assets/simplemissiles/models/item/trapdoorclosed.json",
+          "src/main/resources/assets/simplemissiles/blockstates/trapdoorclosed.json",
+          "src/main/resources/assets/simplemissiles/models/block/trapdoorclosed.json"
+        ]
+      }
+    },
+    {
+      "name": "Trapdooropen",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapdooropen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/TrapdooropenBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/trapdooropen.json",
+          "src/main/resources/assets/simplemissiles/blockstates/trapdooropen.json",
+          "src/main/resources/assets/simplemissiles/models/block/trapdooropen.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/trapdooropen.json"
+        ]
+      }
+    },
+    {
+      "name": "TrapdoorclosedOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapdoorclosed_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TrapdoorclosedOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrapdooropenRedstoneOff",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapdooropen_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TrapdooropenRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OmegaMissle",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_missle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/omega_missle.json",
+          "src/main/resources/assets/simplemissiles/blockstates/omega_missle.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OmegaMissleBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/omega_missle.json",
+          "src/main/resources/assets/simplemissiles/models/block/omega_missle.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaMissleFalling",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_missle_falling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/block/omega_missle_falling.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/omega_missle_falling.json",
+          "src/main/resources/assets/simplemissiles/models/item/omega_missle_falling.json",
+          "src/main/resources/assets/simplemissiles/blockstates/omega_missle_falling.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OmegaMissleFallingBlock.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaMissleFallingBlockAdded",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_missle_falling_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaMissleFallingBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEntity",
+      "type": "livingentity",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/OmegaEntityEntity.java",
+          "src/main/resources/assets/simplemissiles/models/item/omega_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/OmegaEntityRenderer.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegamissleonspawn",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegamissleonspawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegamissleonspawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegaontick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegaontick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaontickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegadies",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegadies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegadiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegacore",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegacore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/OmegacoreBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/omegacore.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/omegacore.json",
+          "src/main/resources/assets/simplemissiles/models/block/omegacore.json",
+          "src/main/resources/assets/simplemissiles/blockstates/omegacore.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegacoreOnTickUpdate",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegacore_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegacoreOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegacorerecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegacorerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/omegacorerecipe.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Omegabombrecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegabombrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/omegabombrecipe.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "Afddshtpishchiykushchmu",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "afddshtpishchiykushchmu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/AfddshtpishchiykushchmuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PVOOntick",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pvo_ontick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PVOOntickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "TestPVO",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_pvo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/entity/TestPVOBlockEntity.java",
+          "src/main/resources/assets/simplemissiles/blockstates/test_pvo.json",
+          "src/main/resources/assets/simplemissiles/models/block/test_pvo.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/test_pvo.json",
+          "src/main/resources/assets/simplemissiles/models/item/test_pvo.json",
+          "src/main/java/net/mcreator/simplemissiles/block/TestPVOBlock.java"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "BMD",
+      "type": "gui",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bmd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/BMDMenu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/BMDScreen.java"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "Missiletrapdoorrecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missiletrapdoorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/missiletrapdoorrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ExplosionParticle",
+      "type": "particle",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/particles/explosion_particle.json",
+          "src/main/java/net/mcreator/simplemissiles/client/particle/ExplosionParticleParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "Binocularsoverlay",
+      "type": "overlay",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binocularsoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/screens/BinocularsoverlayOverlay.java"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "CoordsBinoculars",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coords_binoculars",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/CoordsBinocularsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "TestBinocular",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_binocular",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TestBinocularProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "BinocularsRightclicked",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binoculars_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/BinocularsRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "Binoculars",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binoculars",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/BinocularsItem.java",
+          "src/main/resources/assets/simplemissiles/models/item/binoculars.json"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "BinocularsItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binoculars_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/BinocularsItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "BinocularsPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binoculars_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/BinocularsPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "Leens",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leens",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/LeensItem.java",
+          "src/main/resources/assets/simplemissiles/models/item/leens.json"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "NightVisionleens",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_visionleens",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/night_visionleens.json",
+          "src/main/java/net/mcreator/simplemissiles/item/NightVisionleensItem.java"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "Leensrecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leensrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/leensrecipe.json"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "NvLeensRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nv_leens_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/recipes/brewing/NvLeensRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "Binocresipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binocresipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/binocresipe.json"
+        ]
+      },
+      "path": "~/Binoculars"
+    },
+    {
+      "name": "Playerlocator",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerlocator",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/playerlocator.json",
+          "src/main/java/net/mcreator/simplemissiles/block/PlayerlocatorBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/playerlocator.json",
+          "src/main/java/net/mcreator/simplemissiles/block/entity/PlayerlocatorBlockEntity.java",
+          "src/main/resources/assets/simplemissiles/blockstates/playerlocator.json",
+          "src/main/resources/assets/simplemissiles/models/block/playerlocator.json"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Locatorentity",
+      "type": "livingentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locatorentity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/LocatorentityRenderer.java",
+          "src/main/java/net/mcreator/simplemissiles/entity/LocatorentityEntity.java"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "PlayerlocatorBlockAdded",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerlocator_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PlayerlocatorBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "LocatorentityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locatorentity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LocatorentityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "LocatorGui",
+      "type": "gui",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/LocatorGuiMenu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/LocatorGuiScreen.java",
+          "src/main/java/net/mcreator/simplemissiles/network/LocatorGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Findingplayer",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "findingplayer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/FindingplayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "PlayerlocatorOnTickUpdate",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerlocator_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PlayerlocatorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Secondsleftfinding",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondsleftfinding",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/SecondsleftfindingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Locatorcoords",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locatorcoords",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LocatorcoordsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "GadgetGui",
+      "type": "gui",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gadget_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/gui/GadgetGuiScreen.java",
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/GadgetGuiMenu.java"
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "Positioncompromising",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "positioncompromising",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PositioncompromisingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "Yourlocation",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yourlocation",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/YourlocationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "CoordinatesFastChangerRightclicked",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coordinates_fast_changer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/CoordinatesFastChangerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "Playerlocatorrecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerlocatorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/playerlocatorrecipe.json"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Orbitallasermissile",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitallasermissile",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/orbitallasermissile.json",
+          "src/main/resources/assets/simplemissiles/models/item/orbitallasermissile.json",
+          "src/main/resources/assets/simplemissiles/blockstates/orbitallasermissile.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OrbitallasermissileBlock.java",
+          "src/main/resources/assets/simplemissiles/models/block/orbitallasermissile.json"
+        ]
+      }
+    },
+    {
+      "name": "Orbitalstrikemissileentity",
+      "type": "livingentity",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitalstrikemissileentity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/OrbitalstrikemissileentityRenderer.java",
+          "src/main/java/net/mcreator/simplemissiles/entity/OrbitalstrikemissileentityEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Orbitalstrikeentityonspawn",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitalstrikeentityonspawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OrbitalstrikeentityonspawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Orbitallasershoot",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitallasershoot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/orbitallasershoot.json",
+          "src/main/resources/assets/simplemissiles/models/block/orbitallasershoot.json",
+          "src/main/java/net/mcreator/simplemissiles/block/entity/OrbitallasershootBlockEntity.java",
+          "src/main/resources/assets/simplemissiles/blockstates/orbitallasershoot.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OrbitallasershootBlock.java",
+          "src/main/resources/assets/simplemissiles/models/item/orbitallasershoot.json"
+        ]
+      }
+    },
+    {
+      "name": "OrbitallasershootBlockAdded",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitallasershoot_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OrbitallasershootBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrbitallaserBlockAdded",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitallaser_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OrbitallaserBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Orbitalentontick",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitalentontick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OrbitalentontickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lasermissilebroken",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lasermissilebroken",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/lasermissilebroken.json",
+          "src/main/resources/assets/simplemissiles/models/block/lasermissilebroken.json",
+          "src/main/java/net/mcreator/simplemissiles/block/LasermissilebrokenBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/lasermissilebroken.json",
+          "src/main/resources/assets/simplemissiles/models/item/lasermissilebroken.json"
+        ]
+      }
+    },
+    {
+      "name": "DesecratedNetherStar",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desecrated_nether_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/desecrated_nether_star.json",
+          "src/main/java/net/mcreator/simplemissiles/item/DesecratedNetherStarItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DesecratedNetherStarItemIsDroppedByPlayer",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desecrated_nether_star_item_is_dropped_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/DesecratedNetherStarItemIsDroppedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DataTransferblock",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_transferblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/data_transferblock.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/data_transferblock.json",
+          "src/main/resources/assets/simplemissiles/models/block/data_transferblock.json",
+          "src/main/resources/assets/simplemissiles/models/item/data_transferblock.json",
+          "src/main/java/net/mcreator/simplemissiles/block/DataTransferblockBlock.java",
+          "src/main/java/net/mcreator/simplemissiles/block/entity/DataTransferblockBlockEntity.java"
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "Console",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "console",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/entity/ConsoleBlockEntity.java",
+          "src/main/resources/assets/simplemissiles/models/block/console.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/console.json",
+          "src/main/resources/assets/simplemissiles/models/item/console.json",
+          "src/main/java/net/mcreator/simplemissiles/block/ConsoleBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/console.json"
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "LaunchpadOnTickUpdate",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launchpad_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LaunchpadOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LaunchPad"
+    },
+    {
+      "name": "DataTransferblockrecieve",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_transferblockrecieve",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/block/data_transferblockrecieve.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/data_transferblockrecieve.json",
+          "src/main/resources/assets/simplemissiles/blockstates/data_transferblockrecieve.json",
+          "src/main/resources/assets/simplemissiles/models/item/data_transferblockrecieve.json",
+          "src/main/java/net/mcreator/simplemissiles/block/DataTransferblockrecieveBlock.java"
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "DataTransferblockOnTickUpdate",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_transferblock_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/DataTransferblockOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "DebugTitle",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/DebugTitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deadlands",
+      "type": "biome",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/worldgen/biome/deadlands.json",
+          "src/main/resources/data/simplemissiles/worldgen/configured_feature/deadlands_tree.json",
+          "src/main/resources/data/simplemissiles/worldgen/placed_feature/deadlands_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Missilesmoke",
+      "type": "particle",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilesmoke",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/particles/missilesmoke.json",
+          "src/main/java/net/mcreator/simplemissiles/client/particle/MissilesmokeParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "DesecratedNetherStarItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desecrated_nether_star_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/DesecratedNetherStarItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Radiationonplayertick",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiationonplayertick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/RadiationonplayertickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "Radiationdamagr",
+      "type": "damagetype",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiationdamagr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/damage_type/radiationdamagr.json"
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "Omegaexplosion",
+      "type": "livingentity",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegaexplosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/OmegaexplosionRenderer.java",
+          "src/main/resources/assets/simplemissiles/models/item/omegaexplosion_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/entity/OmegaexplosionEntity.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaexplosionOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegaexplosion_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaexplosionOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "GeigerCounter",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geiger_counter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/geiger_counter.json",
+          "src/main/java/net/mcreator/simplemissiles/item/GeigerCounterItem.java"
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "GeigerCounterItemInHandTick",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geiger_counter_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/GeigerCounterItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "GeigercO",
+      "type": "overlay",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geigerc_o",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/screens/GeigercOOverlay.java"
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "RadiationPerTickGeiger",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_per_tick_geiger",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/RadiationPerTickGeigerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "GeigercODisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geigerc_o_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/GeigercODisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "EffectMissileFalling",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_missile_falling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/block/effect_missile_falling.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/effect_missile_falling.json",
+          "src/main/resources/assets/simplemissiles/blockstates/effect_missile_falling.json",
+          "src/main/resources/assets/simplemissiles/models/item/effect_missile_falling.json",
+          "src/main/java/net/mcreator/simplemissiles/block/EffectMissileFallingBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RadawayActiveTickCondition",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radaway_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/RadawayActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RadAvay"
+    },
+    {
+      "name": "Radaway",
+      "type": "potioneffect",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radaway",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/potion/RadawayMobEffect.java"
+        ]
+      },
+      "path": "~/RadAvay"
+    },
+    {
+      "name": "RadAwayp",
+      "type": "potion",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_awayp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/RadAvay"
+    },
+    {
+      "name": "Consumedradiation",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consumedradiation",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ConsumedradiationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "RadAvayRec",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_avay_rec",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/recipes/brewing/RadAvayRecBrewingRecipe.java"
+        ]
+      },
+      "path": "~/RadAvay"
+    },
+    {
+      "name": "Thruster",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thruster",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/thruster.json",
+          "src/main/java/net/mcreator/simplemissiles/item/ThrusterItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Thrusterrecipe",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thrusterrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/thrusterrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NavigationSystem",
+      "type": "item",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "navigation_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/NavigationSystemItem.java",
+          "src/main/resources/assets/simplemissiles/models/item/navigation_system.json"
+        ]
+      }
+    },
+    {
+      "name": "NavigationSystemCraft",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "navigation_system_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/navigation_system_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "Datablockrecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datablockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/datablockrecipe.json"
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "Consolecreaft",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consolecreaft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/consolecreaft.json"
+        ]
+      },
+      "path": "~/ConsoleandDataTrBl"
+    },
+    {
+      "name": "Decreasedcraft",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decreasedcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/decreasedcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "PvoEntity",
+      "type": "livingentity",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pvo_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/PvoEntityEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/PvoEntityRenderer.java"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "TestPVOBlockAdded",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_pvo_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/TestPVOBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "PvoEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pvo_entity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PvoEntityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "Shyyshduyshtfshksshchghtie",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shyyshduyshtfshksshchghtie",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ShyyshduyshtfshksshchghtieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "Resetmissiles",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resetmissiles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ResetmissilesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Missilelocator",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocator",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/missilelocator.json",
+          "src/main/resources/assets/simplemissiles/models/item/missilelocator.json",
+          "src/main/java/net/mcreator/simplemissiles/block/MissilelocatorBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/missilelocator.json",
+          "src/main/resources/assets/simplemissiles/models/block/missilelocator.json"
+        ]
+      }
+    },
+    {
+      "name": "Missilelocatorfound",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocatorfound",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/block/missilelocatorfound.json",
+          "src/main/java/net/mcreator/simplemissiles/block/MissilelocatorfoundBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/missilelocatorfound.json",
+          "src/main/resources/assets/simplemissiles/models/item/missilelocatorfound.json",
+          "src/main/resources/assets/simplemissiles/blockstates/missilelocatorfound.json"
+        ]
+      }
+    },
+    {
+      "name": "MissilelocatorfoundOnTickUpdate",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocatorfound_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MissilelocatorfoundOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MissilelocatorOnTickUpdate",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocator_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MissilelocatorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Missilelocatorgui",
+      "type": "gui",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocatorgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/gui/MissilelocatorguiScreen.java",
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/MissilelocatorguiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Locatorguicount",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locatorguicount",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LocatorguicountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Locator2",
+      "type": "livingentity",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/Locator2Renderer.java",
+          "src/main/java/net/mcreator/simplemissiles/entity/Locator2Entity.java"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "Locat3",
+      "type": "livingentity",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locat_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/Locat3Entity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/Locat3Renderer.java"
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "PidCraft",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pid_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/pid_craft.json"
+        ]
+      },
+      "path": "~/PID"
+    },
+    {
+      "name": "Geigercraft",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geigercraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/geigercraft.json"
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "PvoRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pvo_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/pvo_recipe.json"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "MissileLocatorCraft",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missile_locator_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/missile_locator_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "DataTransfer",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_transfer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/DataTransferProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PlayerLocator"
+    },
+    {
+      "name": "HeeelNah",
+      "type": "achievement",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heeel_nah",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/advancements/heeel_nah.json"
+        ]
+      },
+      "path": "~/Achievments"
+    },
+    {
+      "name": "AdvancedWeaponry",
+      "type": "achievement",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_weaponry",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/advancements/advanced_weaponry.json"
+        ]
+      },
+      "path": "~/Achievments"
+    },
+    {
+      "name": "AhhanotherNerd",
+      "type": "achievement",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ahhanother_nerd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/advancements/ahhanother_nerd.json"
+        ]
+      },
+      "path": "~/Achievments"
+    },
+    {
+      "name": "WhatAStrangeFeeling",
+      "type": "achievement",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "what_a_strange_feeling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/advancements/what_a_strange_feeling.json"
+        ]
+      },
+      "path": "~/Achievments"
+    },
+    {
+      "name": "AdvancedWeaponry2",
+      "type": "achievement",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_weaponry_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/advancements/advanced_weaponry_2.json"
+        ]
+      },
+      "path": "~/Achievments"
+    },
+    {
+      "name": "Manual",
+      "type": "item",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/ManualItem.java",
+          "src/main/resources/assets/simplemissiles/models/item/manual.json",
+          "src/main/java/net/mcreator/simplemissiles/item/inventory/ManualInventoryCapability.java"
+        ]
+      },
+      "path": "~/Manual"
+    },
+    {
+      "name": "Manualp1",
+      "type": "gui",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manualp_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/network/Manualp1ButtonMessage.java",
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/Manualp1Menu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/Manualp1Screen.java"
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "ManualPage2",
+      "type": "gui",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual_page_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/network/ManualPage2ButtonMessage.java",
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/ManualPage2Menu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/ManualPage2Screen.java"
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "Topage2",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topage_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/Topage2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "Topage3",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topage_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/Topage3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "Topage1",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topage_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/Topage1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "ManualRightclicked",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/ManualRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manual"
+    },
+    {
+      "name": "Manualpage3",
+      "type": "gui",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manualpage_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/Manualpage3Menu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/Manualpage3Screen.java",
+          "src/main/java/net/mcreator/simplemissiles/network/Manualpage3ButtonMessage.java"
+        ]
+      },
+      "path": "~/Manual/Pages"
+    },
+    {
+      "name": "Plasma",
+      "type": "block",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/plasma.json",
+          "src/main/resources/assets/simplemissiles/models/block/plasma.json",
+          "src/main/resources/assets/simplemissiles/models/item/plasma.json",
+          "src/main/java/net/mcreator/simplemissiles/block/PlasmaBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/plasma.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasmaBlockAdded",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PlasmaBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OmegaMissileGui",
+      "type": "gui",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_missile_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/world/inventory/OmegaMissileGuiMenu.java",
+          "src/main/java/net/mcreator/simplemissiles/client/gui/OmegaMissileGuiScreen.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEmptyEntity",
+      "type": "livingentity",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_empty_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/OmegaEmptyEntityEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/OmegaEmptyEntityRenderer.java",
+          "src/main/resources/assets/simplemissiles/models/item/omega_empty_entity_spawn_egg.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaMissileEmptyOnSpawn",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_missile_empty_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaMissileEmptyOnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEntityMissileFaliingEmpty",
+      "type": "block",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_entity_missile_faliing_empty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/omega_entity_missile_faliing_empty.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OmegaEntityMissileFaliingEmptyBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/omega_entity_missile_faliing_empty.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/omega_entity_missile_faliing_empty.json",
+          "src/main/resources/assets/simplemissiles/models/block/omega_entity_missile_faliing_empty.json"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEntityMissileFaliingEmptyBlockAdded",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_entity_missile_faliing_empty_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaEntityMissileFaliingEmptyBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEmptyOnTick",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_empty_on_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaEmptyOnTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "OmegaEmptyEntityEntityDies",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_empty_entity_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OmegaEmptyEntityEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "MushroomExplosionEntity",
+      "type": "livingentity",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_explosion_entity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/mushroom_explosion_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/MushroomExplosionEntityRenderer.java",
+          "src/main/java/net/mcreator/simplemissiles/entity/MushroomExplosionEntityEntity.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "MushroomExplosionEntityModelVisualScale",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_explosion_entity_model_visual_scale",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MushroomExplosionEntityModelVisualScaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "MushroomExplosionEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_explosion_entity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MushroomExplosionEntityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "MushroomExplosionEntityOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_explosion_entity_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MushroomExplosionEntityOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "LightExplosion",
+      "type": "livingentity",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_explosion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/light_explosion_spawn_egg.json",
+          "src/main/java/net/mcreator/simplemissiles/entity/LightExplosionEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/LightExplosionRenderer.java"
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "LightExplosionOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_explosion_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/LightExplosionOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OmegaMissile"
+    },
+    {
+      "name": "ManualCraft",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/manual_craft.json"
+        ]
+      },
+      "path": "~/Manual"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/bullet.json",
+          "src/main/java/net/mcreator/simplemissiles/item/BulletItem.java"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "Buller",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buller",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/bullet.json"
+        ]
+      },
+      "path": "~/PVO"
+    },
+    {
+      "name": "OverloadedRedstoneblock",
+      "type": "block",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overloaded_redstoneblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/overloaded_redstoneblock.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OverloadedRedstoneblockBlock.java",
+          "src/main/resources/assets/simplemissiles/models/block/overloaded_redstoneblock.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/overloaded_redstoneblock.json",
+          "src/main/resources/assets/simplemissiles/models/item/overloaded_redstoneblock.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BurnedRepeaterOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_repeater_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/BurnedRepeaterOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BurnedRepeater",
+      "type": "block",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_repeater",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/models/item/burned_repeater.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/burned_repeater.json",
+          "src/main/resources/assets/simplemissiles/blockstates/burned_repeater.json",
+          "src/main/resources/assets/simplemissiles/models/block/burned_repeater.json",
+          "src/main/java/net/mcreator/simplemissiles/block/BurnedRepeaterBlock.java"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EmpMissile",
+      "type": "block",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp_missile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/block/EmpMissileBlock.java",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/emp_missile.json",
+          "src/main/resources/assets/simplemissiles/blockstates/emp_missile.json",
+          "src/main/resources/assets/simplemissiles/models/block/emp_missile.json",
+          "src/main/resources/assets/simplemissiles/models/item/emp_missile.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BurnedComparator",
+      "type": "block",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burned_comparator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/burned_comparator.json",
+          "src/main/resources/assets/simplemissiles/models/item/burned_comparator.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/burned_comparator.json",
+          "src/main/resources/assets/simplemissiles/models/block/burned_comparator.json",
+          "src/main/java/net/mcreator/simplemissiles/block/BurnedComparatorBlock.java"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "WeakDeadlands",
+      "type": "biome",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weak_deadlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/worldgen/configured_feature/weak_deadlands_tree.json",
+          "src/main/resources/data/simplemissiles/worldgen/biome/weak_deadlands.json",
+          "src/main/resources/data/simplemissiles/worldgen/placed_feature/weak_deadlands_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "StrongDeadlands",
+      "type": "biome",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_deadlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/worldgen/configured_feature/strong_deadlands_tree.json",
+          "src/main/resources/data/simplemissiles/worldgen/biome/strong_deadlands.json",
+          "src/main/resources/data/simplemissiles/worldgen/placed_feature/strong_deadlands_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "HazmatArmorArmor",
+      "type": "armor",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/item/HazmatArmorArmorItem.java",
+          "src/main/resources/assets/simplemissiles/models/item/hazmat_armor_armor_leggings.json",
+          "src/main/resources/assets/simplemissiles/models/item/hazmat_armor_armor_chestplate.json",
+          "src/main/resources/assets/simplemissiles/models/item/hazmat_armor_armor_boots.json",
+          "src/main/resources/assets/simplemissiles/models/item/hazmat_armor_armor_helmet.json"
+        ]
+      },
+      "path": "~/Hazmat_suit"
+    },
+    {
+      "name": "HazmatArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/hazmat_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Hazmat_suit"
+    },
+    {
+      "name": "HazmatArmorArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/hazmat_armor_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Hazmat_suit"
+    },
+    {
+      "name": "HazmatArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/hazmat_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Hazmat_suit"
+    },
+    {
+      "name": "HazmatArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/hazmat_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Hazmat_suit"
+    },
+    {
+      "name": "MilkIntolerance",
+      "type": "potioneffect",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_intolerance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/potion/MilkIntoleranceMobEffect.java"
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "MilkIntoleranceEffectExpires",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_intolerance_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MilkIntoleranceEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "MissileLocatorburned",
+      "type": "block",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missile_locatorburned",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/missile_locatorburned.json",
+          "src/main/resources/assets/simplemissiles/models/item/missile_locatorburned.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/missile_locatorburned.json",
+          "src/main/java/net/mcreator/simplemissiles/block/MissileLocatorburnedBlock.java",
+          "src/main/resources/assets/simplemissiles/models/block/missile_locatorburned.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "Missilelocatorfixing",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missilelocatorfixing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/missilelocatorfixing.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BrokenLocatorAnt",
+      "type": "livingentity",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_locator_ant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/BrokenLocatorAntRenderer.java",
+          "src/main/resources/data/simplemissiles/forge/biome_modifier/broken_locator_ant_biome_modifier.json",
+          "src/main/java/net/mcreator/simplemissiles/entity/BrokenLocatorAntEntity.java"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BrokenLocatorAntOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_locator_ant_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/BrokenLocatorAntOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "PlayerLocatorOverloadedOnTickUpdate",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_locator_overloaded_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/PlayerLocatorOverloadedOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "PlayerLocatorOverloaded",
+      "type": "block",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_locator_overloaded",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplemissiles/blockstates/player_locator_overloaded.json",
+          "src/main/resources/assets/simplemissiles/models/item/player_locator_overloaded.json",
+          "src/main/java/net/mcreator/simplemissiles/block/PlayerLocatorOverloadedBlock.java",
+          "src/main/resources/assets/simplemissiles/models/block/player_locator_overloaded.json",
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/player_locator_overloaded.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "OverloadedBMDOnTickUpdate",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overloaded_bmd_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/OverloadedBMDOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "OverloadedBMD",
+      "type": "block",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overloaded_bmd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/overloaded_bmd.json",
+          "src/main/resources/assets/simplemissiles/models/item/overloaded_bmd.json",
+          "src/main/resources/assets/simplemissiles/blockstates/overloaded_bmd.json",
+          "src/main/java/net/mcreator/simplemissiles/block/OverloadedBMDBlock.java",
+          "src/main/resources/assets/simplemissiles/models/block/overloaded_bmd.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EMPLAnd",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empl_and",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/EMPLAndProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EMPSTABLE",
+      "type": "block",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empstable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/loot_tables/blocks/empstable.json",
+          "src/main/resources/assets/simplemissiles/models/item/empstable.json",
+          "src/main/java/net/mcreator/simplemissiles/block/EMPSTABLEBlock.java",
+          "src/main/resources/assets/simplemissiles/blockstates/empstable.json",
+          "src/main/resources/assets/simplemissiles/models/block/empstable.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EMPMInair",
+      "type": "livingentity",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empm_inair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/entity/EMPMInairEntity.java",
+          "src/main/java/net/mcreator/simplemissiles/client/renderer/EMPMInairRenderer.java"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EMPMissileonspwn",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp_missileonspwn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/EMPMissileonspwnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "EMPMIssileontick",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empm_issileontick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/EMPMIssileontickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "MIT",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplemissiles/procedures/MITProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiation"
+    },
+    {
+      "name": "LocatorFixing",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_fixing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/locator_fixing.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    },
+    {
+      "name": "BMDFixing",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bmd_fixing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simplemissiles/recipes/bmd_fixing.json"
+        ]
+      },
+      "path": "~/EMPMissile"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Targetx",
+      "type": "blockstate",
+      "scope": "world",
+      "value": "Blocks.AIR.defaultBlockState()"
+    },
+    {
+      "name": "Targetz",
+      "type": "blockstate",
+      "scope": "world",
+      "value": "Blocks.AIR.defaultBlockState()"
+    },
+    {
+      "name": "Missiles_in_the_air",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "startingmissle",
+      "files": [
+        "misslestart"
+      ],
+      "category": "neutral",
+      "subtitle": "Starting Missle"
+    },
+    {
+      "name": "locator_beep",
+      "files": [
+        "sonar-ping-95840",
+        "sonar-sweep-beep-80957"
+      ],
+      "category": "block",
+      "subtitle": "Locator_beep"
+    },
+    {
+      "name": "gatgetopen",
+      "files": [
+        "gadgetopen"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "distant_explosion",
+      "files": [
+        "distant-explosion-90743"
+      ],
+      "category": "neutral",
+      "subtitle": "Distant Explosion"
+    },
+    {
+      "name": "omegaexplosion",
+      "files": [
+        "explosion-large-129051"
+      ],
+      "category": "neutral",
+      "subtitle": "Omega Missile Explosion"
+    },
+    {
+      "name": "geiger_counter",
+      "files": [
+        "gieger1"
+      ],
+      "category": "neutral",
+      "subtitle": "Gieger Counter Detects Radiation"
+    },
+    {
+      "name": "emp_blast",
+      "files": [
+        "emp-blast-107780"
+      ],
+      "category": "neutral",
+      "subtitle": "Emp blast"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:OmegaEntityMissileFaliingEmpty",
+      "~CUSTOM:OmegaMissleFalling",
+      "~CUSTOM:OmegaMissle",
+      "~CUSTOM:Trapdooropen",
+      "~CUSTOM:Trapdoorclosed"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:OmegaEntityMissileFaliingEmpty",
+      "~CUSTOM:OmegaMissleFalling",
+      "~CUSTOM:OmegaMissle",
+      "~CUSTOM:Trapdooropen",
+      "~CUSTOM:Trapdoorclosed"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "block.simplemissiles.cluster_bomb_falling": "Cluster Bomb Falling",
+      "item.simplenukes.coordinates_fast_changer": "CFC",
+      "entity.simplemissiles.omega_empty_entity": "Omega Entity",
+      "block.simplemissiles.data_transferblockrecieve": "Data Transferblockrecieve",
+      "gui.simplemissiles.gadget_gui.button_coordinates": "Coordinates",
+      "gui.simplemissiles.launch_pad_gui.label_enter_coordinates": "Enter coordinates",
+      "subtitles.distant_explosion": "Distant Explosion",
+      "gui.simplemissiles.manualp_1.button_empty1": "",
+      "death.attack.radiationdamagr.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.advanced_weaponry_2.title": "Advanced weaponry",
+      "gui.simplemissiles.missilelocatorgui.label_missile_locator": "Missile Locator",
+      "gui.simplemissiles.locator_gui.label_player_locator": "Player Locator",
+      "gui.simplemissiles.manual_page_2.label_crafting": "Crafting",
+      "item.minecraft.tipped_arrow.effect.rad_awayp": "Arrow of RadAway",
+      "advancements.heeel_nah.title": "Heeeell Nah!",
+      "advancements.ahhanother_nerd.title": "Ahh, another nerd!",
+      "subtitles.gatgetopen": "",
+      "advancements.what_a_strange_feeling.descr": "Get a taste of radiation",
+      "item.simplemissiles.hazmat_armor_armor_boots": "Hazmat Boots",
+      "death.attack.radiationdamagr": "%1$s died from radiation",
+      "gui.simplemissiles.launch_pad_gui.Z": "Z",
+      "gui.simplemissiles.launch_pad_gui.X": "X",
+      "item.simplenukes.tnt_missle_entity_spawn_egg": "Tnt Missle Entity Spawn Egg",
+      "advancements.advanced_weaponry.descr": "by Glaiden_",
+      "gui.simplemissiles.manualpage_3.button_empty1": "",
+      "block.simplemissiles.missile_locatorburned": "Overloaded Missile Locator",
+      "block.simplemissiles.overloaded_redstoneblock": "Burned Redstone Block",
+      "gui.simplenukes.launch_pad_gui.button_launch1": "LAUNCH!",
+      "subtitles.geiger_counter": "Gieger Counter Detects Radiation",
+      "gui.simplemissiles.binocularsoverlay.label_coords": "Coords",
+      "block.simplemissiles.trapdoorclosed": "Missle Trapdoor",
+      "item.simplemissiles.tnt_missle_entity_spawn_egg": "Tnt Missle Entity Spawn Egg",
+      "block.simplemissiles.playerlocator": "Player Locator",
+      "item.simplemissiles.navigation_system": "Navigation System",
+      "block.simplemissiles.omega_missle": "Omega Missle",
+      "item_group.simplenukes.simple_nukes": "Simple Missles",
+      "block.simplemissiles.launchpad": "Launch Pad",
+      "biome.simplemissiles.weak_deadlands": "Weak Deadlands",
+      "gui.simplemissiles.debug_gui.label_degub": "Degub",
+      "gui.simplenukes.launch_pad_gui.button_launch": "Set coords",
+      "entity.simplenukes.cluster_bomb_entity": "Cluster Bomb Entity",
+      "gui.simplemissiles.gadget_gui.button_safety": "Safety",
+      "advancements.advanced_weaponry.title": "Simple Missiles",
+      "entity.simplemissiles.locator_2": "Locatorentity",
+      "item.simplemissiles.hazmat_armor_armor_chestplate": "Hazmat Chestplate",
+      "item.simplemissiles.omegaexplosion_spawn_egg": "Omegaexplosion Spawn Egg",
+      "block.simplenukes.launchpad": "Launch Pad",
+      "entity.simplenukes.omega_entity": "Omega Entity",
+      "block.simplenukes.trapdooropen": "Missle Trapdoor",
+      "gui.simplemissiles.manualp_1.button_empty": "",
+      "gui.simplemissiles.manualp_1.label_sslsimple_missiles_mod": "Simple Missiles Mod",
+      "block.simplenukes.tnt_missle_falling": "Tnt Missle Falling",
+      "block.simplemissiles.cluster_bomb": "Cluster Bomb",
+      "entity.simplemissiles.broken_locator_ant": "Broken Locator Ant",
+      "item.simplemissiles.manual": "Simple Missiles Manual",
+      "block.simplemissiles.missilelocatorfound": "Missile locator found",
+      "item.simplemissiles.night_visionleens": "Night Vision Lens",
+      "item.simplemissiles.hazmat_armor_armor_helmet": "Hazmat Helmet",
+      "gui.simplemissiles.omega_missile_gui.label_core": "Core",
+      "gui.simplemissiles.locator_gui.label_progress": "Progress:",
+      "block.simplenukes.trapdoorclosed": "Missle Trapdoor",
+      "gui.simplemissiles.locator_gui.dynamic_location": "dynamic location",
+      "gui.simplemissiles.manual_page_2.label_3press_set_coords_button": "3.Press \"Set coords\"",
+      "block.simplenukes.tnt_missle": "Tnt Missle",
+      "block.simplenukes.cluster_bomb_falling": "Cluster Bomb Falling",
+      "block.simplenukes.cluster_bomb": "Cluster Bomb",
+      "subtitles.startingmissle": "Starting Missle",
+      "gui.simplemissiles.launch_pad_gui.button_launch": "Set coords",
+      "gui.simplenukes.launch_pad_gui.label_enter_coordinates": "Enter coordinates",
+      "block.simplemissiles.trapdooropen": "Missle Trapdoor",
+      "entity.simplemissiles.orbitalstrikemissileentity": "Orbitalstrikemissileentity",
+      "subtitles.omegaexplosion": "Omega Missile Explosion",
+      "entity.simplemissiles.locat_3": "Locat 3",
+      "gui.simplemissiles.manualpage_3.button_empty": "",
+      "gui.simplemissiles.omega_missile_gui.label_coal": "Coal",
+      "block.simplenukes.falling_napalm": "Falling Napalm",
+      "block.simplemissiles.lasermissilebroken": "Lasermissilebroken",
+      "gui.simplemissiles.launch_pad_gui.button_launch1": "LAUNCH!",
+      "item.simplemissiles.geiger_counter": "Geiger Counter",
+      "effect.simplemissiles.radaway": "RadAway",
+      "gui.simplemissiles.manual_page_2.label_2enter_coordinates": "2.Enter coordinates.",
+      "subtitles.emp_blast": "Emp blast",
+      "block.simplemissiles.missilelocator": "Missile locator",
+      "effect.simplemissiles.milk_intolerance": "Milk Intolerance",
+      "gui.simplemissiles.geigerc_o.label_radiation_per_tick": "Radiation per tick",
+      "gui.simplemissiles.locator_gui.button_get_location": "Find Player",
+      "advancements.advanced_weaponry_2.descr": "Create Launch Pad",
+      "biome.simplemissiles.strong_deadlands": "Strong Deadlands",
+      "block.simplemissiles.player_locator_overloaded": "Overloaded Player Locator",
+      "gui.simplemissiles.manual_page_2.label_1_place_missile_on_top": "1.Place Missile on top.",
+      "block.simplemissiles.omega_entity_missile_faliing_empty": "Omega Missle f",
+      "advancements.what_a_strange_feeling.title": "What a strange feeling?",
+      "gui.simplenukes.bmd.label_bmd": "BMD",
+      "entity.simplemissiles.tnt_missle_entity": "Tnt Missle Entity",
+      "item.simplemissiles.napalm_entity_spawn_egg": "Napalm Entity Spawn Egg",
+      "entity.simplemissiles.cluster_bomb_entity": "Cluster Bomb Entity",
+      "item.simplemissiles.desecrated_nether_star": "Desecrated Nether Star",
+      "item.minecraft.splash_potion.effect.rad_awayp": "Splash bottle of RadAway",
+      "advancements.ahhanother_nerd.descr": "Create BMD",
+      "item.simplenukes.cluster_bomb_entity_spawn_egg": "Cluster Bomb Entity Spawn Egg",
+      "block.simplemissiles.omega_missle_falling": "Omega Missle f",
+      "block.simplemissiles.burned_repeater": "Burned Repeater",
+      "subtitles.locator_beep": "Locator_beep",
+      "item.minecraft.potion.effect.rad_awayp": "RadAway in bottle",
+      "entity.simplenukes.tnt_missle_entity": "Tnt Missle Entity",
+      "block.simplenukes.test_pvo": "BMD",
+      "block.simplenukes.omega_missle": "Omega Missle",
+      "advancements.heeel_nah.descr": "Are you sure about this shit?",
+      "item.simplemissiles.thruster": "Thruster",
+      "gui.simplemissiles.manual_page_2.label_signal": "signal.",
+      "block.simplemissiles.data_transferblock": "Data Transfer Block",
+      "gui.simplemissiles.manual_page_2.button_empty": "",
+      "item.simplemissiles.mushroom_explosion_entity_spawn_egg": "Mushroom Explosion Entity Spawn Egg",
+      "entity.simplenukes.napalm_entity": "Napalm Entity",
+      "gui.simplemissiles.manual_page_2.button_empty1": "",
+      "gui.simplemissiles.manual_page_2.label_launch_pad": "Launch Pad",
+      "gui.simplemissiles.manual_page_2.label_or_with_redstone_signal": "or with redstone",
+      "entity.simplemissiles.omega_entity": "Omega Entity",
+      "biome.simplemissiles.deadlands": "Deadlands",
+      "block.simplemissiles.falling_napalm": "Falling Napalm",
+      "block.simplemissiles.effect_missile_falling": "Effect Missile Falling",
+      "entity.simplemissiles.empm_inair": "EMPM In air",
+      "entity.simplemissiles.light_explosion": "Light Explosion",
+      "item_group.simplemissiles.simple_nukes": "Simple Missles",
+      "entity.simplemissiles.omegaexplosion": "Omegaexplosion",
+      "block.simplenukes.omega_missle_falling": "Omega Missle f",
+      "item.simplemissiles.binoculars": "Binoculars",
+      "block.simplemissiles.tnt_missle": "Tnt Missle",
+      "gui.simplemissiles.manualpage_3.label_in_progress": "In Progress...",
+      "gui.simplenukes.launch_pad_gui.Z": "Z",
+      "gui.simplemissiles.manual_page_2.label_4launch_it_with_button_or": "4.Launch it with button",
+      "block.simplemissiles.burned_comparator": "Burned Repeater",
+      "gui.simplemissiles.manual_page_2.label_if_you_changed_target": "if you changed target.",
+      "entity.simplemissiles.pvo_entity": "Pvo Entity",
+      "block.simplemissiles.orbitallasershoot": "Orbitallaser",
+      "item.simplemissiles.coordinates_fast_changer": "PID",
+      "item.simplenukes.napalm_entity_spawn_egg": "Napalm Entity Spawn Egg",
+      "gui.simplemissiles.omega_missile_gui.label_tnt": "Tnt",
+      "block.simplemissiles.test_pvo": "BMD",
+      "gui.simplemissiles.manualp_1.label_sslmanual": "Manual",
+      "block.simplemissiles.overloaded_bmd": "Overloaded BMD",
+      "entity.simplemissiles.mushroom_explosion_entity": "Mushroom Explosion Entity",
+      "item.simplemissiles.hazmat_armor_armor_leggings": "Hazmat Leggings",
+      "block.simplemissiles.tnt_missle_falling": "Tnt Missle Falling",
+      "item.simplemissiles.cluster_bomb_entity_spawn_egg": "Cluster Bomb Entity Spawn Egg",
+      "block.simplemissiles.omegacore": "§eOmega Core",
+      "gui.simplemissiles.bmd.label_bmd": "BMD",
+      "gui.simplemissiles.locator_gui.button_transfer_data": "Transfer Data",
+      "gui.simplemissiles.omega_missile_gui.label_omega_missile": "Omega Missile",
+      "item.simplemissiles.bullet": "BMD Bullet",
+      "block.simplemissiles.napalm_missle": "Napalm Missle",
+      "entity.simplemissiles.locatorentity": "Locatorentity",
+      "item.minecraft.lingering_potion.effect.rad_awayp": "Lingering bottle of RadAway",
+      "gui.simplenukes.launch_pad_gui.X": "X",
+      "item.simplenukes.omega_entity_spawn_egg": "Omega Entity Spawn Egg",
+      "item.simplemissiles.omega_empty_entity_spawn_egg": "Omega Entity Spawn Egg",
+      "item.simplemissiles.leens": "Lens",
+      "gui.simplemissiles.manual_page_2.label_how_to_use": "How to use",
+      "entity.simplemissiles.napalm_entity": "Napalm Entity",
+      "gui.simplemissiles.locator_gui.label_location": "Location:",
+      "item.simplemissiles.light_explosion_spawn_egg": "Light Explosion Spawn Egg",
+      "block.simplemissiles.empstable": "Emp Missile",
+      "death.attack.radiationdamagr.player": "%1$s died from radiation whilst trying to escape %2$s",
+      "block.simplemissiles.orbitallasermissile": "Orbital Strike Missile",
+      "gui.simplemissiles.missilelocatorgui.label_missiles": "Missiles",
+      "gui.simplemissiles.locator_gui.Nickname": "Player Nickname",
+      "item.simplemissiles.omega_entity_spawn_egg": "Omega Entity Spawn Egg",
+      "block.simplenukes.omegacore": "§eOmega Core",
+      "block.simplenukes.napalm_missle": "Napalm Missle",
+      "block.simplemissiles.plasma": "Plasma",
+      "block.simplemissiles.emp_missile": "Emp Missile Falling",
+      "block.simplemissiles.console": "Console"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "TntMissile",
+        "children": []
+      },
+      {
+        "name": "NapalmMissile",
+        "children": []
+      },
+      {
+        "name": "ClusterMissile",
+        "children": []
+      },
+      {
+        "name": "OmegaMissile",
+        "children": []
+      },
+      {
+        "name": "LaunchPad",
+        "children": []
+      },
+      {
+        "name": "RadAvay",
+        "children": []
+      },
+      {
+        "name": "Radiation",
+        "children": []
+      },
+      {
+        "name": "Binoculars",
+        "children": []
+      },
+      {
+        "name": "PID",
+        "children": []
+      },
+      {
+        "name": "PlayerLocator",
+        "children": []
+      },
+      {
+        "name": "ConsoleandDataTrBl",
+        "children": []
+      },
+      {
+        "name": "PVO",
+        "children": []
+      },
+      {
+        "name": "Achievments",
+        "children": []
+      },
+      {
+        "name": "Manual",
+        "children": [
+          {
+            "name": "Pages",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "EMPMissile",
+        "children": []
+      },
+      {
+        "name": "Hazmat_suit",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "simplemissiles",
+    "modName": "Glaiden\u0027s Simple Missiles",
+    "version": "1.6.0",
+    "description": "Omega Update!",
+    "author": "Glaiden_",
+    "websiteURL": "https://discord.gg/crhq3Fny6v",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "modPicture": "tnt_missle_fallingimage",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.simplemissiles"
+  },
+  "mcreatorVersion": 202400118518
+}

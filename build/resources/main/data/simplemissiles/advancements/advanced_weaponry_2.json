@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplemissiles:launchpad"
+    },
+    "title": {
+      "translate": "advancements.advanced_weaponry_2.title"
+    },
+    "description": {
+      "translate": "advancements.advanced_weaponry_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advanced_weaponry_2_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "simplemissiles:launchpad"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "simplemissiles:advanced_weaponry"
+}

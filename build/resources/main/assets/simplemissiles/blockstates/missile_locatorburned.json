@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/missile_locatorburned"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/missile_locatorburned",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/missile_locatorburned",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/missile_locatorburned",
+      "y": 270
+    }
+  }
+}

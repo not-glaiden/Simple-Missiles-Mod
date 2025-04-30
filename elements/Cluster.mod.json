@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.FLOWING_LAVA"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 1.0,
+    "damage": 50.0,
+    "knockback": 10,
+    "entityModel": "ModelCluster",
+    "customModelTexture": "cluster.png",
+    "onHitsBlock": {
+      "name": "ClusterProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "ClusterProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "ClusterProjectileHitsBlock"
+    }
+  }
+}

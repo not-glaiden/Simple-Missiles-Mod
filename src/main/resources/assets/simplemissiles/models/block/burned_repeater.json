@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/burnedrepeater",
+  "textures": {
+    "all": "simplemissiles:block/burnedrepeater",
+    "particle": "simplemissiles:block/burnedrepeater",
+    "1": "simplemissiles:block/burnedrepeater"
+  },
+  "render_type": "solid"
+}

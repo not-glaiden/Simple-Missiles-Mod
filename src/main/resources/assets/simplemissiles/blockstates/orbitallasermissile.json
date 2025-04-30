@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/orbitallasermissile"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/orbitallasermissile",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/orbitallasermissile",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/orbitallasermissile",
+      "y": 270
+    }
+  }
+}

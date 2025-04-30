@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/console3",
+  "textures": {
+    "all": "simplemissiles:block/console",
+    "particle": "simplemissiles:block/particle",
+    "0": "simplemissiles:block/console"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/napalmmissle3",
+  "textures": {
+    "all": "simplemissiles:block/napalm",
+    "particle": "simplemissiles:block/napalm",
+    "0": "simplemissiles:block/napalm"
+  },
+  "render_type": "solid"
+}

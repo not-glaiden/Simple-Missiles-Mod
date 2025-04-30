@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:calibrated_sculk_sensor"
+    },
+    "d": {
+      "item": "simplemissiles:navigation_system"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:missilelocator",
+    "count": 1
+  }
+}

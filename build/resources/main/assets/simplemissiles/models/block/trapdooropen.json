@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/missle_trapdoor_open",
+  "textures": {
+    "all": "simplemissiles:block/tekstureluk",
+    "particle": "simplemissiles:block/tekstureluk",
+    "0": "simplemissiles:block/tekstureluk"
+  },
+  "render_type": "solid"
+}

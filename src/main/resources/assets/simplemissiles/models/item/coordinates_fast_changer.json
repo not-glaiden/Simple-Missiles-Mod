@@ -1,0 +1,7 @@
+{
+  "parent": "simplemissiles:custom/remote",
+  "textures": {
+    "0": "simplemissiles:block/remote",
+    "particle": "simplemissiles:item/remote"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplemissiles:omega_missle"
+    },
+    "title": {
+      "translate": "advancements.heeel_nah.title"
+    },
+    "description": {
+      "translate": "advancements.heeel_nah.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "heeel_nah_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "simplemissiles:omega_missle"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "simplemissiles:ahhanother_nerd"
+}

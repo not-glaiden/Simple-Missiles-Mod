@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/trapdooropen"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/trapdooropen",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/trapdooropen",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/trapdooropen",
+      "y": 270
+    }
+  }
+}

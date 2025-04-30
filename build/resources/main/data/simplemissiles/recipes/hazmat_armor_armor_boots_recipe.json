@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:slime_ball"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    },
+    "c": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:hazmat_armor_armor_boots",
+    "count": 1
+  }
+}

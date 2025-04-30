@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "simplemissiles:navigation_system"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:tnt"
+    },
+    "e": {
+      "item": "simplemissiles:thruster"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:empstable",
+    "count": 1
+  }
+}

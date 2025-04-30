@@ -1,0 +1,79 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gadgui2.png",
+          "use1Xscale": false,
+          "x": -136,
+          "y": -128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_positionsafety",
+          "text": {
+            "fixedValue": "PositionSafety",
+            "name": "Positioncompromising"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 58,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_your_location",
+          "text": {
+            "fixedValue": "Your location",
+            "name": "Yourlocation"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 62,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_consumed_radiation",
+          "text": {
+            "fixedValue": "Consumed Radiation",
+            "name": "Consumedradiation"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 109
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "startingmissle": {
+    "subtitle": "subtitles.startingmissle",
+    "sounds": [
+      {
+        "name": "simplemissiles:misslestart",
+        "stream": false
+      }
+    ]
+  },
+  "locator_beep": {
+    "subtitle": "subtitles.locator_beep",
+    "sounds": [
+      {
+        "name": "simplemissiles:sonar-ping-95840",
+        "stream": false
+      },
+      {
+        "name": "simplemissiles:sonar-sweep-beep-80957",
+        "stream": false
+      }
+    ]
+  },
+  "gatgetopen": {
+    "sounds": [
+      {
+        "name": "simplemissiles:gadgetopen",
+        "stream": false
+      }
+    ]
+  },
+  "distant_explosion": {
+    "subtitle": "subtitles.distant_explosion",
+    "sounds": [
+      {
+        "name": "simplemissiles:distant-explosion-90743",
+        "stream": false
+      }
+    ]
+  },
+  "omegaexplosion": {
+    "subtitle": "subtitles.omegaexplosion",
+    "sounds": [
+      {
+        "name": "simplemissiles:explosion-large-129051",
+        "stream": false
+      }
+    ]
+  },
+  "geiger_counter": {
+    "subtitle": "subtitles.geiger_counter",
+    "sounds": [
+      {
+        "name": "simplemissiles:gieger1",
+        "stream": false
+      }
+    ]
+  },
+  "emp_blast": {
+    "subtitle": "subtitles.emp_blast",
+    "sounds": [
+      {
+        "name": "simplemissiles:emp-blast-107780",
+        "stream": false
+      }
+    ]
+  }
+}

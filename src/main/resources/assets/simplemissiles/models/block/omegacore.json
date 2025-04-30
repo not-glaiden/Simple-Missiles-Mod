@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/omega_core",
+    "up": "simplemissiles:block/omega_core",
+    "north": "simplemissiles:block/omega_core",
+    "east": "simplemissiles:block/omega_core",
+    "south": "simplemissiles:block/omega_core",
+    "west": "simplemissiles:block/omega_core",
+    "particle": "simplemissiles:block/omega_core"
+  },
+  "render_type": "solid"
+}

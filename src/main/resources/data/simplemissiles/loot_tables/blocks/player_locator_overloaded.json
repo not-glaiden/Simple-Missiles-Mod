@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "simplemissiles:blocks/player_locator_overloaded",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simplemissiles:player_locator_overloaded"
+        }
+      ]
+    }
+  ]
+}

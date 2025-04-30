@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/missile_locator",
+    "up": "simplemissiles:block/missile_locator",
+    "north": "simplemissiles:block/locator_m_front_found",
+    "east": "simplemissiles:block/missile_locator",
+    "south": "simplemissiles:block/missile_locator",
+    "west": "simplemissiles:block/missile_locator",
+    "particle": "simplemissiles:block/missile_locator"
+  },
+  "render_type": "solid"
+}

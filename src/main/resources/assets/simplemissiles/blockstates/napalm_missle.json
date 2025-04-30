@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/napalm_missle"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/napalm_missle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/napalm_missle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/napalm_missle",
+      "y": 270
+    }
+  }
+}

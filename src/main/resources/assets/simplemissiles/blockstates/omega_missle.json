@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/omega_missle"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/omega_missle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/omega_missle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/omega_missle",
+      "y": 270
+    }
+  }
+}

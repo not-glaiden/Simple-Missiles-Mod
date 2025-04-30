@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "simplemissiles:night_visionleens"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "simplemissiles:navigation_system"
+    },
+    "d": {
+      "item": "minecraft:spyglass"
+    },
+    "e": {
+      "item": "minecraft:observer"
+    },
+    "f": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:binoculars",
+    "count": 1
+  }
+}

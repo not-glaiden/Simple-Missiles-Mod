@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "simplemissiles:blocks/missile_locatorburned",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simplemissiles:missile_locatorburned"
+        }
+      ]
+    }
+  ]
+}

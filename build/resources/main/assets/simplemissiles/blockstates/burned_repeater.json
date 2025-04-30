@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/burned_repeater"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/burned_repeater",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/burned_repeater",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/burned_repeater",
+      "y": 270
+    }
+  }
+}

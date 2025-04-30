@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/ploshadka2",
+  "textures": {
+    "all": "simplemissiles:block/launcher_pad_texture2",
+    "particle": "simplemissiles:block/launcher_pad_texture2",
+    "0": "simplemissiles:block/launcher_pad_texture2"
+  },
+  "render_type": "solid"
+}

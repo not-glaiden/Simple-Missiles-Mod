@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/empmissile",
+  "textures": {
+    "all": "simplemissiles:block/empmissiletexture",
+    "particle": "simplemissiles:block/empmissiletexture",
+    "0": "simplemissiles:block/empmissiletexture"
+  },
+  "render_type": "cutout"
+}

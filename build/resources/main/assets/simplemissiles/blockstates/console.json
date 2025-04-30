@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/console"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/console",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/console",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/console",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/overloaded_redstone_block",
+    "up": "simplemissiles:block/overloaded_redstone_block",
+    "north": "simplemissiles:block/overloaded_redstone_block",
+    "east": "simplemissiles:block/overloaded_redstone_block",
+    "south": "simplemissiles:block/overloaded_redstone_block",
+    "west": "simplemissiles:block/overloaded_redstone_block",
+    "particle": "simplemissiles:block/overloaded_redstone_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.POLISHED_BASALT"
+      },
+      {
+        "value": "CUSTOM:NavigationSystem"
+      },
+      {
+        "value": "Blocks.POLISHED_BASALT"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Blocks.POLISHED_BASALT"
+      },
+      {
+        "value": "CUSTOM:Thruster"
+      },
+      {
+        "value": "Blocks.POLISHED_BASALT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NapalmMissle"
+    },
+    "name": "napalm_recipe",
+    "namespace": "mod"
+  }
+}

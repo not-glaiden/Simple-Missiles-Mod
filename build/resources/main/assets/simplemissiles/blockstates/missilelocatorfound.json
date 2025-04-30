@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/missilelocatorfound"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/missilelocatorfound",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/missilelocatorfound",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/missilelocatorfound",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "simplemissiles:block/missilelocatorfound",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "simplemissiles:block/missilelocatorfound",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "X",
+          "name": "X",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 70
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Z",
+          "name": "Z",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_launch",
+          "text": "Set coords",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetCoordsButton"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 183,
+          "y": 137
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_launch1",
+          "text": "LAUNCH!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LAUNCH"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 183,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_enter_coordinates",
+          "text": {
+            "fixedValue": "Enter coordinates"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 153,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_current_strike_location",
+          "text": {
+            "fixedValue": "current:",
+            "name": "CurrentStrikeLocation"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 153,
+          "y": 117
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

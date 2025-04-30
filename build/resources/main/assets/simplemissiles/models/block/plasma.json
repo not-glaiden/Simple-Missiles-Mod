@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/plasma",
+    "up": "simplemissiles:block/plasma",
+    "north": "simplemissiles:block/plasma",
+    "east": "simplemissiles:block/plasma",
+    "south": "simplemissiles:block/plasma",
+    "west": "simplemissiles:block/plasma",
+    "particle": "simplemissiles:block/plasma"
+  },
+  "render_type": "solid"
+}

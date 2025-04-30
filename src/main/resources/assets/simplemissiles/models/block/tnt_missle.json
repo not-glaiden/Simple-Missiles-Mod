@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/tnt_missle",
+  "textures": {
+    "all": "simplemissiles:block/tnt_missle",
+    "particle": "simplemissiles:block/tnt_missle",
+    "0": "simplemissiles:block/tnt_missle"
+  },
+  "render_type": "solid"
+}

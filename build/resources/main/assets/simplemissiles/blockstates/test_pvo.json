@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/test_pvo"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/test_pvo",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/test_pvo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/test_pvo",
+      "y": 270
+    }
+  }
+}

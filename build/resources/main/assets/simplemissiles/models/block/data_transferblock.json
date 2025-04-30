@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/dt33",
+    "up": "simplemissiles:block/dt44",
+    "north": "simplemissiles:block/dtfront",
+    "east": "simplemissiles:block/dt11",
+    "south": "simplemissiles:block/dtfront",
+    "west": "simplemissiles:block/dt22",
+    "particle": "simplemissiles:block/dt33"
+  },
+  "render_type": "solid"
+}

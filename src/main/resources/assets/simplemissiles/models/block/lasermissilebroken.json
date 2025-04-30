@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/laser_missile_broken",
+  "textures": {
+    "all": "simplemissiles:block/lasermissilebroken",
+    "particle": "simplemissiles:block/lasermissilebroken",
+    "0": "simplemissiles:block/lasermissilebroken"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplemissiles:geiger_counter"
+    },
+    "title": {
+      "translate": "advancements.what_a_strange_feeling.title"
+    },
+    "description": {
+      "translate": "advancements.what_a_strange_feeling.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "what_a_strange_feeling_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "simplemissiles:deadlands"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "simplemissiles:advanced_weaponry"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/laser_missile2",
+  "textures": {
+    "all": "simplemissiles:block/lasermissile",
+    "particle": "simplemissiles:block/lasermissile",
+    "0": "simplemissiles:block/lasermissile"
+  },
+  "render_type": "translucent"
+}

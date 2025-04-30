@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "aca",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_wool"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    },
+    "c": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:hazmat_armor_armor_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "manualpage.png",
+          "use1Xscale": false,
+          "x": 55,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "Topage1"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 22,
+          "y": 185
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "page_backward.png",
+          "use1Xscale": false,
+          "x": 23,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "page_forward.png",
+          "use1Xscale": false,
+          "x": 378,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "Topage3"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 378,
+          "y": 185
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "launchpad_downscaled.png",
+          "use1Xscale": true,
+          "x": 99,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_launch_pad",
+          "text": {
+            "fixedValue": "Launch Pad"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "craft1.png",
+          "use1Xscale": true,
+          "x": 100,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_crafting",
+          "text": {
+            "fixedValue": "Crafting"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 102,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_how_to_use",
+          "text": {
+            "fixedValue": "How to use"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1_place_missile_on_top",
+          "text": {
+            "fixedValue": "1.Place Missile on top."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_2enter_coordinates",
+          "text": {
+            "fixedValue": "2.Enter coordinates."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_3press_set_coords_button",
+          "text": {
+            "fixedValue": "3.Press \"Set coords\""
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 97
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_if_you_changed_target",
+          "text": {
+            "fixedValue": "if you changed target."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 226,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_4launch_it_with_button_or",
+          "text": {
+            "fixedValue": "4.Launch it with button"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 133
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_or_with_redstone_signal",
+          "text": {
+            "fixedValue": "or with redstone"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 227,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_signal",
+          "text": {
+            "fixedValue": "signal."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 227,
+          "y": 157
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

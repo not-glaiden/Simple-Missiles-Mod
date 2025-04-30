@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "launcher_pad_texture2"
+      },
+      "name": "default"
+    }
+  }
+}

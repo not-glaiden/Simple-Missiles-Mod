@@ -1,0 +1,38 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_coords",
+          "text": {
+            "fixedValue": "Coords",
+            "name": "CoordsBinoculars"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 9,
+          "y": 12
+        }
+      }
+    ],
+    "baseTexture": "binocularsoverlay7.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "TestBinocular"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

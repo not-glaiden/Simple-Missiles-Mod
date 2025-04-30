@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "simplemissiles:block/blank",
+    "up": "simplemissiles:block/blank",
+    "north": "simplemissiles:block/blank",
+    "east": "simplemissiles:block/blank",
+    "south": "simplemissiles:block/blank",
+    "west": "simplemissiles:block/blank",
+    "particle": "simplemissiles:block/blank"
+  },
+  "render_type": "cutout"
+}

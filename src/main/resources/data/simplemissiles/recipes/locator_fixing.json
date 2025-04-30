@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "simplemissiles:navigation_system"
+    },
+    {
+      "item": "simplemissiles:player_locator_overloaded"
+    }
+  ],
+  "result": {
+    "item": "simplemissiles:playerlocator",
+    "count": 1
+  }
+}

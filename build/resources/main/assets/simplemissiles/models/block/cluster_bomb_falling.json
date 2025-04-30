@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/bigbomb2",
+  "textures": {
+    "all": "simplemissiles:block/bigbomb",
+    "particle": "simplemissiles:block/bigbomb",
+    "1": "simplemissiles:block/bigbomb"
+  },
+  "render_type": "solid"
+}

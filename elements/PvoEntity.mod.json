@@ -1,0 +1,143 @@
+{
+  "_fv": 60,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Pvo Entity",
+    "mobLabel": "",
+    "mobModelName": "ModelBmd2",
+    "mobModelTexture": "bmd2.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelLayers": [],
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.1,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": false,
+    "spawnEggBaseColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Creature",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "stepHeight": 0.6,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 16,
+    "health": 10,
+    "xpAmount": 0,
+    "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
+    "flyingMob": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": true,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
+    "immuneToPlayer": true,
+    "immuneToExplosion": true,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.generic.hurt"
+    },
+    "deathSound": {
+      "value": "entity.generic.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "entityDataEntries": [],
+    "onMobTickUpdate": {
+      "name": "PvoEntityOnEntityTickUpdate"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"4\" y=\"-6\"><next><block type=\"java_code\"><field name=\"CODE\">this.goalSelector.addGoal(1, new Goal() {&amp;#10;    private final double radius = 200.0;&amp;#10;    private Entity target;&amp;#10;&amp;#10;    @Override&amp;#10;    public boolean canUse() {&amp;#10;        // Получаем список FallingBlockEntity в радиусе&amp;#10;        List&lt;net.minecraft.world.entity.item.FallingBlockEntity&gt; blocks = PvoEntityEntity.this.getCommandSenderWorld().getEntitiesOfClass(&amp;#10;            net.minecraft.world.entity.item.FallingBlockEntity.class,&amp;#10;            PvoEntityEntity.this.getBoundingBox().inflate(radius)&amp;#10;        );&amp;#10;        if (!blocks.isEmpty()) {&amp;#10;            target = blocks.get(0); // Берем первый объект&amp;#10;            return true;&amp;#10;        }&amp;#10;        return false;&amp;#10;    }&amp;#10;&amp;#10;    @Override&amp;#10;    public boolean canContinueToUse() {&amp;#10;        // Продолжаем цель, пока цель существует&amp;#10;        return target != null &amp;&amp; target.isAlive();&amp;#10;    }&amp;#10;&amp;#10;    @Override&amp;#10;    public void tick() {&amp;#10;        if (target != null) {&amp;#10;            // Смотрим на цель&amp;#10;            PvoEntityEntity.this.getLookControl().setLookAt(target, 10.0F, PvoEntityEntity.this.getMaxHeadXRot());&amp;#10;        }&amp;#10;    }&amp;#10;&amp;#10;    @Override&amp;#10;    public void stop() {&amp;#10;        // Сбрасываем цель, когда она завершена&amp;#10;        target = null;&amp;#10;    }&amp;#10;});</field></block></next></block><block type=\"swim_in_water\" x=\"642\" y=\"359\"><field name=\"condition\">null,null</field></block><block type=\"watch_closest_entity\" x=\"515\" y=\"459\"><field name=\"entity\"></field><field name=\"radius\">200</field><field name=\"condition\">null,null</field></block><block type=\"look_around\" x=\"871\" y=\"608\"><field name=\"condition\">null,null</field></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false
+  }
+}

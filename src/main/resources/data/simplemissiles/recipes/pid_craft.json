@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "fff"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:green_dye"
+    },
+    "b": {
+      "item": "minecraft:iron_bars"
+    },
+    "c": {
+      "item": "simplemissiles:navigation_system"
+    },
+    "d": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "e": {
+      "item": "minecraft:redstone"
+    },
+    "f": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:coordinates_fast_changer",
+    "count": 1
+  }
+}

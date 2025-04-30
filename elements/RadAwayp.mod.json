@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "potion",
+  "definition": {
+    "potionName": "RadAway in bottle",
+    "splashName": "Splash bottle of RadAway",
+    "lingeringName": "Lingering bottle of RadAway",
+    "arrowName": "Arrow of RadAway",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Radaway"
+        },
+        "duration": 200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

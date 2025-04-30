@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_nugget"
+    },
+    "b": {
+      "item": "minecraft:dispenser"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "simplemissiles:navigation_system"
+    },
+    "e": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "f": {
+      "item": "minecraft:calibrated_sculk_sensor"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:test_pvo",
+    "count": 1
+  }
+}

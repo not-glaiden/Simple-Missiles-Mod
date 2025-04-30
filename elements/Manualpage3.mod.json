@@ -1,0 +1,91 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "manualpage.png",
+          "use1Xscale": false,
+          "x": 54,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "Topage2"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 22,
+          "y": 185
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "page_backward.png",
+          "use1Xscale": false,
+          "x": 23,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "page_forward.png",
+          "use1Xscale": false,
+          "x": 378,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": true,
+          "width": 25,
+          "height": 20,
+          "x": 378,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in_progress",
+          "text": {
+            "fixedValue": "In Progress..."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 112,
+          "y": 112
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

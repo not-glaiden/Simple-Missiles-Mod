@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "simplemissiles:omega_entity_missile_faliing_empty",
+    "simplemissiles:omega_missle_falling",
+    "simplemissiles:omega_missle",
+    "simplemissiles:trapdooropen",
+    "simplemissiles:trapdoorclosed"
+  ]
+}

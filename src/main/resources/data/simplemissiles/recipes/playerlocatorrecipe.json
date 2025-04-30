@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cbc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "simplemissiles:navigation_system"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "simplemissiles:playerlocator",
+    "count": 1
+  }
+}

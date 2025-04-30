@@ -1,0 +1,110 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Player Nickname",
+          "name": "Nickname",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_get_location",
+          "text": "Find Player",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Findingplayer"
+          },
+          "width": 87,
+          "height": 20,
+          "x": 167,
+          "y": 151
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_progress",
+          "text": {
+            "fixedValue": "Progress:",
+            "name": "Secondsleftfinding"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_location",
+          "text": {
+            "fixedValue": "Location:",
+            "name": "Locatorcoords"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player_locator",
+          "text": {
+            "fixedValue": "Player Locator"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_transfer_data",
+          "text": "Transfer Data",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "DataTransfer"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 164,
+          "y": 176
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

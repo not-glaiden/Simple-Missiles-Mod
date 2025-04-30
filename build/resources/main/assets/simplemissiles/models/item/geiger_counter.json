@@ -1,0 +1,7 @@
+{
+  "parent": "simplemissiles:custom/geiger_counter",
+  "textures": {
+    "0": "simplemissiles:block/gieger",
+    "particle": "simplemissiles:item/gieger"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "simplemissiles:custom/omega_redisegn",
+  "textures": {
+    "all": "simplemissiles:block/omeganew",
+    "particle": "simplemissiles:block/omeganew",
+    "0": "simplemissiles:block/omeganew"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simplemissiles:block/cluster_bomb"
+    },
+    "facing=east": {
+      "model": "simplemissiles:block/cluster_bomb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simplemissiles:block/cluster_bomb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simplemissiles:block/cluster_bomb",
+      "y": 270
+    }
+  }
+}

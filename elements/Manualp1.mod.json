@@ -1,0 +1,94 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "manualpage.png",
+          "use1Xscale": false,
+          "x": 54,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "page_forward.png",
+          "use1Xscale": false,
+          "x": 378,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "Topage2"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 378,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sslsimple_missiles_mod",
+          "text": {
+            "fixedValue": "Simple Missiles Mod"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 94,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sslmanual",
+          "text": {
+            "fixedValue": "Manual"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fmfvdfshchvf.png",
+          "use1Xscale": false,
+          "x": 95,
+          "y": 70
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

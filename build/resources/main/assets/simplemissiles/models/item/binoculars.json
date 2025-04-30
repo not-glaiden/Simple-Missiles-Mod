@@ -1,0 +1,7 @@
+{
+  "parent": "simplemissiles:custom/binoculars2",
+  "textures": {
+    "0": "simplemissiles:block/binoctext",
+    "particle": "simplemissiles:item/binoctext"
+  }
+}

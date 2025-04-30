@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "omega2"
+      },
+      "name": "default"
+    }
+  }
+}
