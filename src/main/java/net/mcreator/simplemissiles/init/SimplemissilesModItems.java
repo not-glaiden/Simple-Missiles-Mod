@@ -28,7 +28,7 @@ import net.mcreator.simplemissiles.SimplemissilesMod;
 
 public class SimplemissilesModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, SimplemissilesMod.MODID);
-	public static final RegistryObject<Item> LAUNCHPAD = block(SimplemissilesModBlocks.LAUNCHPAD);
+	public static final RegistryObject<Item> LAUNCHPAD = block(SimplemissilesModBlocks.LAUNCHPAD_OLD);
 	public static final RegistryObject<Item> TNT_MISSLE = block(SimplemissilesModBlocks.TNT_MISSLE);
 	public static final RegistryObject<Item> TNT_MISSLE_FALLING = block(SimplemissilesModBlocks.TNT_MISSLE_FALLING);
 	public static final RegistryObject<Item> TNT_MISSLE_ENTITY_SPAWN_EGG = REGISTRY.register("tnt_missle_entity_spawn_egg", () -> new ForgeSpawnEggItem(SimplemissilesModEntities.TNT_MISSLE_ENTITY, -1, -6750208, new Item.Properties()));

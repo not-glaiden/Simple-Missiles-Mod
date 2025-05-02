@@ -36,17 +36,17 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.procedures.LaunchpadOnTickUpdateProcedure;
 import net.mcreator.simplemissiles.procedures.LAUNCHProcedure;
-import net.mcreator.simplemissiles.block.entity.LaunchpadBlockEntity;
+import net.mcreator.simplemissiles.block.entity.LaunchpadBlockEntityOld;
 
 import io.netty.buffer.Unpooled;
 
-public class LaunchpadBlock extends Block implements EntityBlock {
+public class LaunchpadBlockOld extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public LaunchpadBlock() {
+	public LaunchpadBlockOld() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
@@ -120,7 +120,7 @@ public class LaunchpadBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new LaunchPadGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new LaunchPadGuiMenuOld(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}
@@ -135,7 +135,7 @@ public class LaunchpadBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new LaunchpadBlockEntity(pos, state);
+		return new LaunchpadBlockEntityOld(pos, state);
 	}
 
 	@Override
@@ -149,7 +149,7 @@ public class LaunchpadBlock extends Block implements EntityBlock {
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof LaunchpadBlockEntity be) {
+			if (blockEntity instanceof LaunchpadBlockEntityOld be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -165,7 +165,7 @@ public class LaunchpadBlock extends Block implements EntityBlock {
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof LaunchpadBlockEntity be)
+		if (tileentity instanceof LaunchpadBlockEntityOld be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

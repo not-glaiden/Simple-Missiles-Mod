@@ -23,7 +23,7 @@ public class SimplemissilesModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SimplemissilesMod.MODID);
 	public static final RegistryObject<CreativeModeTab> SIMPLE_NUKES = REGISTRY.register("simple_nukes",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.simplemissiles.simple_nukes")).icon(() -> new ItemStack(SimplemissilesModBlocks.TNT_MISSLE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(SimplemissilesModBlocks.LAUNCHPAD.get().asItem());
+				tabData.accept(SimplemissilesModBlocks.LAUNCHPAD_OLD.get().asItem());
 				tabData.accept(SimplemissilesModBlocks.TNT_MISSLE.get().asItem());
 				tabData.accept(SimplemissilesModItems.COORDINATES_FAST_CHANGER.get());
 				tabData.accept(SimplemissilesModBlocks.NAPALM_MISSLE.get().asItem());

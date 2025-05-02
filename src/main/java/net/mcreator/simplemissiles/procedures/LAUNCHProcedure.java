@@ -20,7 +20,7 @@ import net.mcreator.simplemissiles.SimplemissilesMod;
 
 public class LAUNCHProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (SimplemissilesModBlocks.LAUNCHPAD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
+		if (SimplemissilesModBlocks.LAUNCHPAD_OLD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (SimplemissilesModBlocks.TNT_MISSLE.get() == (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock()) {
 				world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
 				if (world instanceof ServerLevel _level) {

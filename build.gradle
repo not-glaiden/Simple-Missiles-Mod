@@ -1,6 +1,7 @@
 plugins {
     id 'eclipse'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 version = '1.0'
@@ -10,7 +11,7 @@ archivesBaseName = 'modid'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 

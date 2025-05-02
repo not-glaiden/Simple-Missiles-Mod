@@ -34,7 +34,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.block.entity.ConsoleBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -106,7 +106,7 @@ public class ConsoleBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new LaunchPadGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new LaunchPadGuiMenuOld(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

@@ -30,7 +30,7 @@ import net.mcreator.simplemissiles.block.NapalmMissleBlock;
 import net.mcreator.simplemissiles.block.MissilelocatorfoundBlock;
 import net.mcreator.simplemissiles.block.MissilelocatorBlock;
 import net.mcreator.simplemissiles.block.MissileLocatorburnedBlock;
-import net.mcreator.simplemissiles.block.LaunchpadBlock;
+import net.mcreator.simplemissiles.block.LaunchpadBlockOld;
 import net.mcreator.simplemissiles.block.LasermissilebrokenBlock;
 import net.mcreator.simplemissiles.block.FallingNapalmBlock;
 import net.mcreator.simplemissiles.block.EmpMissileBlock;
@@ -47,7 +47,7 @@ import net.mcreator.simplemissiles.SimplemissilesMod;
 
 public class SimplemissilesModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, SimplemissilesMod.MODID);
-	public static final RegistryObject<Block> LAUNCHPAD = REGISTRY.register("launchpad", () -> new LaunchpadBlock());
+	public static final RegistryObject<Block> LAUNCHPAD_OLD = REGISTRY.register("launchpad_old", () -> new LaunchpadBlockOld());
 	public static final RegistryObject<Block> TNT_MISSLE = REGISTRY.register("tnt_missle", () -> new TntMissleBlock());
 	public static final RegistryObject<Block> TNT_MISSLE_FALLING = REGISTRY.register("tnt_missle_falling", () -> new TntMissleFallingBlock());
 	public static final RegistryObject<Block> NAPALM_MISSLE = REGISTRY.register("napalm_missle", () -> new NapalmMissleBlock());
@@ -82,4 +82,6 @@ public class SimplemissilesModBlocks {
 	public static final RegistryObject<Block> EMPSTABLE = REGISTRY.register("empstable", () -> new EMPSTABLEBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+
+	public static final RegistryObject<Block> LAUNCHPAD = REGISTRY.register("launchpad", () -> new net.mcreator.simplemissiles.revamp.block.LaunchpadBlock());
 }

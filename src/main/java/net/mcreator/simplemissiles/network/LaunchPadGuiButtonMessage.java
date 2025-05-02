@@ -12,7 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.procedures.SetCoordsButtonProcedure;
 import net.mcreator.simplemissiles.procedures.LAUNCHProcedure;
 import net.mcreator.simplemissiles.SimplemissilesMod;
@@ -67,7 +67,7 @@ public class LaunchPadGuiButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z, HashMap<String, String> textstate) {
 		Level world = entity.level();
-		HashMap guistate = LaunchPadGuiMenu.guistate;
+		HashMap guistate = LaunchPadGuiMenuOld.guistate;
 		for (Map.Entry<String, String> entry : textstate.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue();

@@ -21,7 +21,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.init.SimplemissilesModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -30,12 +30,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class LaunchpadBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class LaunchpadBlockEntityOld extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(0, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public LaunchpadBlockEntity(BlockPos position, BlockState state) {
-		super(SimplemissilesModBlockEntities.LAUNCHPAD.get(), position, state);
+	public LaunchpadBlockEntityOld(BlockPos position, BlockState state) {
+		super(SimplemissilesModBlockEntities.LAUNCHPAD_OLD.get(), position, state);
 	}
 
 	@Override
@@ -89,7 +89,7 @@ public class LaunchpadBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new LaunchPadGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new LaunchPadGuiMenuOld(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

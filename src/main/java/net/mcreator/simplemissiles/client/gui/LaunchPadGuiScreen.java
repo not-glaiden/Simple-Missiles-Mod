@@ -11,7 +11,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.procedures.CurrentStrikeLocationProcedure;
 import net.mcreator.simplemissiles.network.LaunchPadGuiButtonMessage;
 import net.mcreator.simplemissiles.SimplemissilesMod;
@@ -20,8 +20,8 @@ import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class LaunchPadGuiScreen extends AbstractContainerScreen<LaunchPadGuiMenu> {
-	private final static HashMap<String, Object> guistate = LaunchPadGuiMenu.guistate;
+public class LaunchPadGuiScreen extends AbstractContainerScreen<LaunchPadGuiMenuOld> {
+	private final static HashMap<String, Object> guistate = LaunchPadGuiMenuOld.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -31,7 +31,7 @@ public class LaunchPadGuiScreen extends AbstractContainerScreen<LaunchPadGuiMenu
 	Button button_launch;
 	Button button_launch1;
 
-	public LaunchPadGuiScreen(LaunchPadGuiMenu container, Inventory inventory, Component text) {
+	public LaunchPadGuiScreen(LaunchPadGuiMenuOld container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;

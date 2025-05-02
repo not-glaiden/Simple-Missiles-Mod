@@ -4,6 +4,7 @@
  */
 package net.mcreator.simplemissiles.init;
 
+import net.mcreator.simplemissiles.revamp.gui.LaunchpadScreen;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,6 +36,8 @@ public class SimplemissilesModScreens {
 			MenuScreens.register(SimplemissilesModMenus.MANUAL_PAGE_2.get(), ManualPage2Screen::new);
 			MenuScreens.register(SimplemissilesModMenus.MANUALPAGE_3.get(), Manualpage3Screen::new);
 			MenuScreens.register(SimplemissilesModMenus.OMEGA_MISSILE_GUI.get(), OmegaMissileGuiScreen::new);
+
+			MenuScreens.register(SimplemissilesModMenus.LAUNCHPAD_MENU.get(), LaunchpadScreen::new);
 		});
 	}
 }

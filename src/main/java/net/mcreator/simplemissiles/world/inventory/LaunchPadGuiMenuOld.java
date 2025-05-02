@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class LaunchPadGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class LaunchPadGuiMenuOld extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -35,7 +35,7 @@ public class LaunchPadGuiMenu extends AbstractContainerMenu implements Supplier<
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public LaunchPadGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+	public LaunchPadGuiMenuOld(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(SimplemissilesModMenus.LAUNCH_PAD_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();

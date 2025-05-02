@@ -21,7 +21,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenu;
+import net.mcreator.simplemissiles.world.inventory.LaunchPadGuiMenuOld;
 import net.mcreator.simplemissiles.init.SimplemissilesModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -89,7 +89,7 @@ public class ConsoleBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new LaunchPadGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new LaunchPadGuiMenuOld(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
