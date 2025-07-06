@@ -15,7 +15,6 @@ public abstract class BaseMachineScreen<M extends BaseMachineMenu> extends Abstr
         this.texture = texture;
     }
 
-
     @Override
     protected void renderBg(GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
         guiGraphics.blit(this.texture, this.leftPos, this.topPos, 0, 0, 256, 256);

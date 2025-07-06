@@ -18,6 +18,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class LaunchpadScreen extends BaseMachineScreen<LaunchpadMenu> {
+    private final MapRenderer2 mapRenderer = new MapRenderer2(20, 4);
+
     public LaunchpadScreen(LaunchpadMenu menu, Inventory inventory, Component component) {
         super(menu, inventory, component, new ResourceLocation(SimpleMissiles.MODID, "textures/screens/launchpad_gui.png"));
     }
@@ -42,9 +44,19 @@ public class LaunchpadScreen extends BaseMachineScreen<LaunchpadMenu> {
         poseStack.translate(this.leftPos + 7, this.topPos + 6, 0);
         float scale = 0.45F;
         poseStack.scale(scale, scale, scale);
-//        MapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
-//        MinimapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
-        MapRenderer2.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
+        this.mapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1));
+
+        final int centerOffset = this.mapRenderer.getRadius() * this.mapRenderer.getScale();
+        final int markerSize = 2;
+
+        guiGraphics.fill(
+                centerOffset - markerSize,
+                centerOffset - markerSize,
+                centerOffset + markerSize,
+                centerOffset + markerSize,
+                0xFFFF0000
+        );
+
         poseStack.popPose();
 
         guiGraphics.drawString(this.font, "X: " + this.menu.data.get(0), this.leftPos + 8, this.topPos + 7, ChatFormatting.DARK_GREEN.getColor());
@@ -52,7 +64,11 @@ public class LaunchpadScreen extends BaseMachineScreen<LaunchpadMenu> {
         renderTooltip(guiGraphics, mouseX, mouseY);
     }
 
-
+    @Override
+    public void onClose() {
+        super.onClose();
+        this.mapRenderer.clearExistingTextures();
+    }
 
     private void tryToSendValue(CoordinatesSetter coordinatesSetter) {
         String value = coordinatesSetter.getValue();
