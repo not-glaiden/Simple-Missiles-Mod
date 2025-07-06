@@ -4,6 +4,7 @@ import com.glaib04kaden.simplemissiles.SimpleMissiles;
 import com.glaib04kaden.simplemissiles.gui.base.BaseMachineScreen;
 import com.glaib04kaden.simplemissiles.gui.widget.CoordinatesSetter;
 import com.glaib04kaden.simplemissiles.misc.MapRenderer;
+import com.glaib04kaden.simplemissiles.misc.MapRenderer2;
 import com.glaib04kaden.simplemissiles.network.SMPacketRegistry;
 import com.glaib04kaden.simplemissiles.network.UpdateLaunchpadDataPacket;
 import com.glaib04kaden.simplemissiles.util.SMUtils;
@@ -41,7 +42,9 @@ public class LaunchpadScreen extends BaseMachineScreen<LaunchpadMenu> {
         poseStack.translate(this.leftPos + 7, this.topPos + 6, 0);
         float scale = 0.45F;
         poseStack.scale(scale, scale, scale);
-        MapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
+//        MapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
+//        MinimapRenderer.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
+        MapRenderer2.render(guiGraphics, mc.level, 0, 0, this.menu.data.get(0), this.menu.data.get(1), 20, 4);
         poseStack.popPose();
 
         guiGraphics.drawString(this.font, "X: " + this.menu.data.get(0), this.leftPos + 8, this.topPos + 7, ChatFormatting.DARK_GREEN.getColor());
